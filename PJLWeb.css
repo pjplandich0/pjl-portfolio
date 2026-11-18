@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    
+   
+   background-color: rgb(48, 180, 224);
+   font-family: sans-serif;
+   padding: 13px;  
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-decoration: none;
+   list-style: none;
+   
+
+}
+
+.headerbar a{
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    list-style: none;
+    
+    
+}
+
+.title-link{
+    margin-left: 70px;
+}
+
+
+.headerbar h1{
+    text-align: left;
+    
+}
+
+
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    a.active,a:hover{
+        background:#e02e9c;
+        transition: 1s;
+    
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: rgb(39, 36, 36);
+    
+}
+
+main{
+    margin-top: 70px;
+}
+
+.container{
+    display:inline-block;
+}
+
+.text{
+    
+    
+    color: rgb(255, 255, 255);
+    margin:1em;
+    font-family: sans-serif;
+    border-right:3px skyblue solid;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18), cursor .4s 
+    step-end infinite alternate;
+
+
+    
+   
+   
+}
+
+.text-2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin:1em;
+    font-family: sans-serif;
+    border-right:3px skyblue solid;
+    width: 799px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18), cursor .4s 
+    step-end infinite alternate;
+}
+
+.text-2-2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin:1em;
+    font-family: sans-serif;
+    border-right:3px skyblue solid;
+    width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18), cursor .4s 
+    step-end infinite alternate;
+}
+
+.text-3{
+
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin:1em;
+    font-family: sans-serif;
+    border-right:3px skyblue solid;
+    width: 1000px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18), cursor .4s 
+    step-end infinite alternate;
+
+}
+
+@keyframes cursor{
+    50%{border-color:transparent}
+}
+@keyframes typing{
+    from{width:0}
+}
+
+
+.white-text{
+    color: rgb(255, 255, 255);
+    margin: 1em;
+    font-family: sans-serif;
+    
+}
+
+aside{
+    width: 20%;
+    float:left;
+    padding: 10px;
+}
+
+.asidecontacts{
+    width:0%;
+}
+
+section{
+    width: 40%;
+    float:left;
+    padding:10px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: x-large;
+}
+
+.sectionprojects{
+    margin-bottom:325px;
+}
+
+.sectioncontacts{
+    width: 40%;
+    float:left;
+    padding:10px;
+    margin-top: 200px;
+    margin-bottom: 350px;
+    margin-right: 300px;
+    font-size: x-large;
+}
+
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+footer{
+
+    display:block;
+    clear:both;
+    background-color: rgb(231, 169, 53);
+    padding: 1%;
+    text-align:center;
+    
+}
+
+
+
+.secondfooter{
+    background-color: rgb(202, 104, 47);
+    padding: 20px;
+    
+   
+}
+.secondfootercontacts{
+    background-color: rgb(202, 104, 47);
+padding: 20px;
+}
+
+.secondfooter a{
+    display: flex;
+    text-decoration: none;
+    font-family:cursive;
+    align-items: center;
+    color: azure;
+   
+    
+  
+}
+.secondfooter li{
+    display: inline-block;
+    font-size: large;
+    a.socials,a:hover{
+        background:#42b81e;
+        transition: 1s;
+    
+    }
+    animation-name:slideLeft;
+    animation-duration: 5s;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(1000px)}
+}
+
+.secondfooter img{
+    margin-top: 1px;
+}
+
+.secondfootercontacts a{
+    display: flex;
+    text-decoration: none;
+    font-family:cursive;
+    align-items: center;
+    color: rgb(255, 253, 253);
+   
+    
+  
+}
+
+.secondfootercontacts li{
+    display: inline-block;
+    font-size: large;
+    a.socials,a:hover{
+        background:#42b81e;
+        transition: 1s;
+    
+    }
+    animation-name:grow;
+    animation-duration:3s;
+    
+
+}
+
+
+
+@keyframes grow{
+    from{transform:scale(15,15)}
+}
+
+
+
+
+
+
+.circle-image{
+    
+    width: 250px;
+    border-radius: 100%;
+    float: left;
+    object-fit: cover;
+    margin: 1.5em;
+    margin-top: 200px;
+
+}
+
+@media screen and (max-width:600px){
+    aside, section, article{
+        width:100%;
+    }
+}
+
+
+
